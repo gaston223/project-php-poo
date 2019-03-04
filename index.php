@@ -1,13 +1,13 @@
 <?php
  //Les inclusions
 //require('Classes/Product.php');
-
-function autoloader_perso($className)
-{
-    var_dump($className);
-    require_once('Classes/' . $className . '.php');
-    //die('Test autoloader');
-}
+require('autoloader.php');
+// function autoloader_perso($className)
+// {
+//     var_dump($className);
+//     require_once('Classes/' . $className . '.php');
+//     //die('Test autoloader');
+// }
 
 spl_autoload_register('autoloader_perso');
 
@@ -17,18 +17,19 @@ echo "Bonjour";
 $hamac = new Product();
 
 //Changement du nom du Hamac
-$hamac->name='Hamac';
-$hamac->description='Incroyable produit';
-$hamac->price=18.99;
+$hamac->setName('Hamac');
+$hamac->setDescription('Incroyable produit');
+$hamac->setPrice(67,83);
 var_dump($hamac);
 
 $parasol = new Product();
-$parasol->name='Parasol';
-$parasol->description='Incroyable Parasol';
-$parasol->price=99;
+$parasol->setName('Parasol');
+$parasol->setDescription('Incroyable Parasol');
+$parasol->setPrice(736,99);
 var_dump($parasol);
 
-echo'<p>' . $parasol->price.' €</p>';
+echo'<p>' . $parasol->getPrice().' €</p>';
+echo'<p>' . $parasol->getDescription().'</p>';
 
 //Appel d'une méthode du parasol
 echo'<p>'. $parasol->displayPrice().'</p>';
