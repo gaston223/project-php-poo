@@ -2,9 +2,6 @@
 require 'traitement-formulaire-produit.php';
 
 ?>
-
-
-
 <?php include 'header.php'; ?>
 
 <main class="container">

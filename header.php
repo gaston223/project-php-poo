@@ -3,7 +3,6 @@
 $categories = ['Voyage', 'Bien-être'];
 
 ?>
-
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>
@@ -38,8 +37,7 @@ $categories = ['Voyage', 'Bien-être'];
 			<?php // Deuxième syntaxe ?>
             <?php foreach($categories as $cat) : ?>
                 <a class="dropdown-item" href="#"><?= $cat ?></a>
-            <?php endforeach; ?>
-            
+            <?php endforeach; ?>  
           </div>
         </li>
       </ul>
