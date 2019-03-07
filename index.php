@@ -1,4 +1,6 @@
 <?php
+
+use Classes\Product;
  //Les inclusions
 //require('Classes/Product.php');
 require('autoloader.php');

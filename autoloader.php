@@ -6,7 +6,7 @@
 function autoloader_perso($className)
 {
     //var_dump($className);
-    require_once('Classes/' . $className . '.php');
+    require_once($className . '.php');
     //die('Test autoloader');
 }
 

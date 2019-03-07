@@ -1,4 +1,6 @@
 <?php
+
+use Classes\User;
 include('autoloader.php');
 
 //Creation d'un User

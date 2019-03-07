@@ -1,4 +1,5 @@
 <?php
+use Classes\Formulaire\FormUtility;
 require 'traitement-formulaire-produit.php';
 require ('autoloader.php');
 $formUtility = new FormUtility();
@@ -17,3 +18,4 @@ $formUtility = new FormUtility();
 </main>
 
 <?php include 'footer.html' ?>
+
